@@ -1,6 +1,12 @@
+# Typescript
 *.d.ts
 *.js
+dist
+
+# Node
 node_modules
+
+# CDKTF
 cdktf.out
 cdktf.log
 *terraform.*.tfstate*

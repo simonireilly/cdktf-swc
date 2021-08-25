@@ -8,9 +8,10 @@
   "scripts": {
     "get": "cdktf get",
     "cdktf": "cdktf",
-    "build": "tsc",
+    "build": "tsc --build",
+    "clean": "rimraf dist",
     "synth": "cdktf synth",
-    "compile": "swc main.ts --out-file main.js & swc .gen/providers/**/*.ts -d .gen/",
+    "compile": "swc main.ts --out-file dist/main.js & swc .gen/providers/**/*.ts -d dist/.gen/",
     "watch": "tsc -w",
     "test": "echo ok",
     "upgrade": "npm i cdktf@latest cdktf-cli@latest",
@@ -27,6 +28,7 @@
     "@swc/cli": "^0.1.49",
     "@swc/core": "^1.2.80",
     "@types/node": "^16.7.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.3.5"
   }
 }

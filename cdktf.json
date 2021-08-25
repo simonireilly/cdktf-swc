@@ -1,6 +1,6 @@
 {
   "language": "typescript",
-  "app": "npm run ${COMMAND:-compile} && node main.js",
+  "app": "npm run ${COMMAND:-compile} && node dist/main.js",
   "terraformProviders": [
     "hashicorp/aws@~> 3.42"
   ],

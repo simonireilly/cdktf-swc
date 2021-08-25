@@ -22,6 +22,8 @@ In this example it is used with cdktf to improve build times.
 - Type-definitions are lost
   - Only an issue if you plan on packaging to distribute; not a problem for this use case.
 
+![results chart](results/chart.svg)
+
 ### Synth
 
 'COMMAND=compile yarn synth' ran
